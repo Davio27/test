@@ -721,6 +721,14 @@ body {
     .modal .modal-content h4{
         top: 30%;
     }
+    .modal .modal-content a{
+        top: 40%;
+        width: 5rem;
+        height: 5rem;
+    }
+    .modal .modal-content a i{
+        font-size: 2.5rem;
+    }
 }
 
 @media(max-width: 993px ) {
@@ -780,7 +788,7 @@ body {
         align-items: center;
         cursor: pointer;
     }
-    .modal-content{
+    .modal .modal-content{
         max-height: 100%;
         max-width: 90%;
         margin: 0 auto;
@@ -795,9 +803,9 @@ body {
         text-align: center;
         flex-direction: column;
     }
-    .modal-content a{
+    .modal .modal-content a{
         position: absolute;
-        top: 83%;
+        top: 41%;
         right: 48%;
         width: 40px;
         height: 40px;
@@ -815,19 +823,14 @@ body {
         font-size: 20px;
     }
 
-    .modal .modal-content a{
-        top: 50%;
-    }
-
-    .modal-content p{
-        
-        height: 40rem;
-        width: 100%;
+    .modal .modal-content p{
+        width: 90%;
         top: 30%; 
     }
 
-    .modal-content h4{
-        top: 30%;
+    .modal .modal-content h4{
+        top: 35%;
+        width: 100%;
     }
 }
 @media(max-width: 889px ){
@@ -846,7 +849,7 @@ body {
 
 }
 
-@media (max-width: 769px ){
+@media (max-width: 769px ) and (min-width: 691px){
     .menu-icon{
         display: block;
         font-size: 2rem;
@@ -907,8 +910,22 @@ body {
         margin-top: 4rem;
         align-items: center;
     }
+    .modal .modal-content h4{
+        width: 100%;
+        font-size: 3rem;
+        top: 45%;
+    }
+    .modal .modal-content p{
+        font-size: 2.5rem;
+    }
+    .modal .modal-content a {
+        top: 46%;
+    }
+    .modal .modal-content a i{
+        font-size: 2rem;
+    }
 }
-@media (max-width: 690px ){
+@media (max-width: 690px ) and (min-width: 634px){
     .close-button {
         display: flex;
         position: absolute;
@@ -919,7 +936,7 @@ body {
         transition: color 0.5s ease;
     }
     .modal .modal-content p {
-        width: 100%;
+        width: 90%;
         font-size: 2.3rem;
     }
     .modal .modal-content h4 {
@@ -935,7 +952,7 @@ body {
 }
 
 
-@media (max-width: 513px){
+@media (max-width: 513px) and (min-width: 491px){
     .home {
         height: 100%;
         flex-direction: column;
@@ -971,6 +988,7 @@ body {
         justify-content: center;
     }
     .modal .modal-content h4{
+        width: 100%;
         font-size: 2.2rem;
         top: 55%;
     }
@@ -978,30 +996,41 @@ body {
         font-size: 1.8rem;
     }
     .modal .modal-content a {
-        width: 3rem;
-        height: 3rem;
+        top: 46%;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .modal .modal-content a i{
+        font-size: 1.5rem;
     }
 
 }
-@media (max-width: 490px){
+@media (max-width: 490px) and (min-width: 421px){
     .home-content h3 span{
         display: flex;
         position: relative;
         left: 2%;
     }
-    
-}
-@media (min-width: 421px){
+    .modal .modal-content h4{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .modal .modal-content p{
+        font-size: 1.6rem;
+        top: 25%;
+    }
     .modal .modal-content a {
-        top: 43%;
+        top: 38%;
         width: 2rem;
         height: 2.2rem;
     }
     .modal .modal-content a i{
         font-size: 1rem;
     }
+    
 }
-@media (max-width: 420px){
+
+@media (max-width: 420px) and (min-width: 391px){
     .home-content h3 span{
         display: flex;
         position: relative;
@@ -1021,22 +1050,16 @@ body {
         font-size: 4rem;
         cursor: pointer;
     }
-    .modal .modal-content a {
-        top: 43%;
-        width: 2rem;
-        height: 2.2rem;
+    .modal .modal-content h4{
+        font-size: 2rem;
+        width: 100%;
     }
-    .modal .modal-content a i{
-        font-size: 1rem;
-    }
-}
-@media (min-width: 391px){
     .modal .modal-content p{
         font-size: 1.6rem;
         top: 25%;
     }
     .modal .modal-content a {
-        top: 39%;
+        top: 38%;
         width: 2rem;
         height: 2.2rem;
     }
@@ -1044,6 +1067,7 @@ body {
         font-size: 1rem;
     }
 }
+
 @media (max-width: 390px){
     .modal .modal-content p {
         top: 25%;
