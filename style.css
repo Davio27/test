@@ -259,7 +259,7 @@ body {
     
 }
 .Sobre-content h2{
-    text-align: left;
+    text-align: center;
     line-height: 1.2;
 }
 .Sobre-content h2 span{
@@ -542,9 +542,9 @@ body {
     justify-content: center;
 }
 .modal-content a{
-    position: absolute;
-    top: 90%;
-    left: 50%;
+    position: fixed;
+    top: 70%;
+    left: 49%;
     width: 30px;
     height: 30px;
     background-color: #fff;
@@ -579,7 +579,7 @@ body {
     width: 100%;
     display: flex;
     position: fixed;
-    left: 35%;
+    left: 42%;
     top: 20%;
     font-size: 3rem;
 }
@@ -668,10 +668,6 @@ body {
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-    /* Estilos específicos para tablets em modo paisagem e tamanhos maiores */
-}
-
 @media (max-width: 1050px ){
     .menu-icon{
         display: block;
@@ -698,90 +694,132 @@ body {
         font-size: 2rem;
         margin: 3rem 0;
     }
+    .modal-content h4{
+        left: 38%;
+        position: fixed;
+    }
 }
-@media only screen and (max-width: 800px){
-    .portfolio-container .modal-content h4{
+@media only screen and (max-width: 950px) and (min-width: 901px){
+    .modal-content h4{
+        left: 37%;
+        position: fixed;
+    }
+}
+@media only screen and (max-width: 900px) and (min-width: 850px){
+    .modal-content h4{
+        left: 36%;
+        position: fixed;
+    }
+}
+@media only screen and (max-width: 850px) and (min-width: 801px){
+    .modal-content h4{
+        left: 35%;
+        position: fixed;
+    }
+}
+@media only screen and (max-width: 800px) and (min-width: 750px){
+    .modal-content h4{
         left: 34%;
         position: fixed;
     }
 }
-@media only screen and (min-width: 701px){
-    .portfolio-container .modal-content h4{
+@media only screen and (max-width: 751px) and (min-width: 701px){
+    .modal-content h4{
         left: 34%;
         position: fixed;
     }
 }
-@media only screen and (max-width: 700px){
-    .portfolio-container .modal-content h4{
-        left: 33%;
+@media only screen and (max-width: 700px) and (min-width: 650px){
+    .modal-content h4{
+        left: 32%;
         position: fixed;
     }
 }
-@media only screen and (min-width: 601px){
-    .portfolio-container .modal-content h4{
+@media only screen and (max-width: 650px) and (min-width: 601px){
+    .modal-content h4{
+        left: 31%;
+        position: fixed;
+    }
+    .modal-content p{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 601px) and (min-width: 550px){
+    .modal-content h4{
         left: 29%;
         position: fixed;
     }
-}
-@media only screen and (max-width: 600px){
-    .portfolio-container .modal-content h4{
-        left: 31%;
-        position: fixed;
+    .modal-content p{
+        font-size: 2rem;
     }
 }
-@media only screen and (min-width: 501px){
-    .portfolio-container .modal-content h4{
-        left: 25%;
+@media only screen and (max-width: 550px) and (min-width: 500px){
+    .modal-content h4{
+        left: 26%;
         position: fixed;
     }
     .modal-content p{
         font-size: 2rem;
     }
 }
-@media only screen and (max-width: 500px){
-    .portfolio-container .modal-content h4{
-        left: 31%;
+@media only screen and (max-width: 500px) and (min-width: 450px){
+    .modal-content h4{
+        left: 28%;
         position: fixed;
-    }
-    .modal-content p{
-        font-size: 2rem;
-    }
-}
-@media only screen and (min-width: 401px){
-    .portfolio-container .modal-content h4{
-        left: 20%;
-        position: fixed;
-    }
-    .modal-content p{
-        font-size: 2rem;
-    }
-}
-@media only screen and (max-width: 400px){
-    .portfolio-container .modal-content h4{
-        left: 31%;
-        position: fixed;
-    }
-    .modal-content p{
-        font-size: 2rem;
-    }
-}
-@media only screen and (min-width: 301px){
-    .portfolio-container .modal-content h4{
         font-size: 2.5rem;
-        left: 20%;
+    }
+    .modal-content p{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 450px) and (min-width: 400px){
+    .modal-content h4{
+        font-size: 2.5rem;
+        left: 26%;
         position: fixed;
     }
     .modal-content p{
         font-size: 2rem;
     }
 }
-@media only screen and (max-width: 300px){
-    .portfolio-container .modal-content h4{
+@media only screen and (max-width: 400px) and (min-width: 350px){
+    .modal-content h4{
         font-size: 2rem;
         left: 28%;
         position: fixed;
     }
     .modal-content p{
         font-size: 1.6rem;
+    }
+    .modal-content a{
+        left: 47%;
+    }
+}
+@media only screen and (max-width: 350px) and (min-width: 300px){
+    .modal-content h4{
+        font-size: 2rem;
+        left: 28%;
+        position: fixed;
+    }
+    .modal-content p{
+        font-size: 1.6rem;
+    }
+    .modal-content a{
+        left: 47%;
+    }
+}
+@media only screen and (max-width: 300px){
+    .modal-content h4{
+        font-size: 1.8rem;
+        left: 28%;
+        position: fixed;
+    }
+    .modal-content p{
+        font-size: 1.2rem;
+    }
+    .modal-content a{
+        left: 47%;
+        width: 1rem;
+        height: 2rem;
     }
 }
