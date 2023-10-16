@@ -51,17 +51,7 @@
         opacity: 1;
     }
 }
-@keyframes zoonIn {
-    0% {
-        transform: scale(0);
-        opacity: 1;
-    }
 
-    100%{
-        transform: scale(1);
-        opacity: 1;
-    }
-}
 @keyframes floatImage {
     0%{
         transform: translateY(0);
@@ -192,6 +182,7 @@ body {
 
 .home-content p{
     font-size: 20px;
+    text-align: justify;
     animation: sliderLeft 1s ease forwards;;
     animation-delay: .1s;
 }
@@ -206,6 +197,10 @@ body {
 }
 
 /* personalizar os iconis de redes sociais */
+.social-media{
+    width: 100%;
+    display: flex;
+}
 .social-media a{
     display: inline-flex;
     justify-content: center;
@@ -272,6 +267,7 @@ body {
 }
 .Sobre-content p{
     font-size: 20px;
+    text-align: justify;
 }
 
 
@@ -292,17 +288,18 @@ body {
 
 .Competencias-container{
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 40px;
     filter: none;
     
 }
 .card {
     align-items: center;
     justify-content: center;
-    display: flex;
+    display:flex;
     position: relative;
     filter: none;
     background-color: transparent;
@@ -406,13 +403,13 @@ body {
     gap: 32px;
 }
 .portfolio-container .portfolio-box {
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 400px;
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
-    display: grid;
+    display: flex;
 }
 
 .portfolio-box img {
@@ -422,10 +419,6 @@ body {
 }
 .portfolio-box {
     transition: transform 0.3s ease;
-}
-
-.portfolio-box:hover img{
-    transform: scale(1.1);
 }
 
 /* .portfolio-layer a */
@@ -442,6 +435,7 @@ body {
 .button i{
     justify-content: center;
     align-items: center;
+    font-size: 2rem;
 }
 
 .portfolio-box .portfolio-layer {
@@ -460,7 +454,7 @@ body {
     transform: translateY(100%);
     transition: .5s ease;
 }
-.portfolio-box:hover .portfolio-layer{
+ .portfolio-box:hover .portfolio-layer{
     transform: translateY(0);
 }
 .portfolio-layer h4{
@@ -473,7 +467,7 @@ body {
 }
 .portfolio-layer a{
     position: absolute;
-    top: 250px;
+    top: 350px;
     right: 15px;
     width: 30px;
     height: 30px;
@@ -492,73 +486,65 @@ body {
     color: var(--second-bg-color);
 }
 
-/* Estilos para a janela modal */
+/* Sessão Janela Modal */
 .modal {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0%;
+    left: 0%;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.882);
     z-index: 1;
-    overflow: auto;
 }
 
-.modal-content{
-    height: 70%;
-    max-width: 105rem;
-    margin: 0 auto;
-    background-color: none;
-    width: 105rem;
-    border-radius: 30%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+.portfolio-container .modal-box{
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 60%;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    text-align: center;
-    flex-direction: column;
+    overflow: hidden;
+    display: flex;
+    border-radius: 8rem;
 }
-.modal-content img{
-    border-radius: 5rem;
+.modal-box img{
     width:  100%;
 }
-.modal-content h4{
-    font-size: 3rem;
-    position: absolute; 
-    right: auto;
-    height: 60rem;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: #fff; 
-    padding: 10px; 
-    transition: transform 0.5s ease; 
-}
-.modal-content p{
-    font-size: 2.5rem;
-    position: absolute; 
-    right: .1rem;
-    height: 40rem;
-    width: auto;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: #fff; 
-    padding: 12px; 
-    border-radius: 10%;
-    transition: transform 0.5s ease; 
+.portfolio-container .close-button{
+    top: 18%;
+    left: 87%;
     display: flex;
-    justify-content: center;
-
+    position: fixed;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
 }
-
+.close-button i{
+    width: 100%;
+    height: 100%;
+    font-size: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.close-button:hover{
+    background: 0 0 15px rgb(205, 12, 12);
+    color: #db1717;
+    box-shadow: 0 0 30px rgb(205, 12, 12);
+}
+.modal-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .modal-content a{
     position: absolute;
-    top: 67rem;
-    right: 52rem;
+    top: 90%;
+    left: 50%;
     width: 30px;
     height: 30px;
     background-color: #fff;
@@ -566,30 +552,39 @@ body {
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 50%;
-    display: flex;
     justify-content: center;
     align-items: center;
-}
-.modal .modal-content{
-    position: absolute;
-    display: absolute;
-    justify-content: center;
-}
-
-.close-button {
-    display: inline-block;
-    position: absolute;
-    width: .2rem;
-    height: 0rem;
-    top: 0rem;
-    right: 3rem;
-    font-size: 6rem;
+    display: flex;
     cursor: pointer;
-    transition: color 0.5s ease;
+}
+.modal-content a:hover{
+    background: var(--text-color);
+    color: #1f242d;
+    box-shadow: 0 0 15px rgb(228, 240, 241);
+}
+.modal-content a i{
+    font-size: 2rem;
+}
+.modal-content p{
+    text-align: justify;
+    display: flex;
+    position: fixed;
+    top: 35%;
+    left: 15%;
+    width: 70%;
+    height: 80%;
+    font-size: 2.5rem;
+}
+.modal-content h4{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    left: 35%;
+    top: 20%;
+    font-size: 3rem;
 }
 
-
-
+/* sessão contato */
 
 .contato h2 {
     margin-bottom: 48px
@@ -672,6 +667,11 @@ body {
         flex-direction: column;
     }
 }
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    /* Estilos específicos para tablets em modo paisagem e tamanhos maiores */
+}
+
 @media (max-width: 1050px ){
     .menu-icon{
         display: block;
@@ -699,5 +699,89 @@ body {
         margin: 3rem 0;
     }
 }
-
-
+@media only screen and (max-width: 800px){
+    .portfolio-container .modal-content h4{
+        left: 34%;
+        position: fixed;
+    }
+}
+@media only screen and (min-width: 701px){
+    .portfolio-container .modal-content h4{
+        left: 34%;
+        position: fixed;
+    }
+}
+@media only screen and (max-width: 700px){
+    .portfolio-container .modal-content h4{
+        left: 33%;
+        position: fixed;
+    }
+}
+@media only screen and (min-width: 601px){
+    .portfolio-container .modal-content h4{
+        left: 29%;
+        position: fixed;
+    }
+}
+@media only screen and (max-width: 600px){
+    .portfolio-container .modal-content h4{
+        left: 31%;
+        position: fixed;
+    }
+}
+@media only screen and (min-width: 501px){
+    .portfolio-container .modal-content h4{
+        left: 25%;
+        position: fixed;
+    }
+    .modal-content p{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 500px){
+    .portfolio-container .modal-content h4{
+        left: 31%;
+        position: fixed;
+    }
+    .modal-content p{
+        font-size: 2rem;
+    }
+}
+@media only screen and (min-width: 401px){
+    .portfolio-container .modal-content h4{
+        left: 20%;
+        position: fixed;
+    }
+    .modal-content p{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 400px){
+    .portfolio-container .modal-content h4{
+        left: 31%;
+        position: fixed;
+    }
+    .modal-content p{
+        font-size: 2rem;
+    }
+}
+@media only screen and (min-width: 301px){
+    .portfolio-container .modal-content h4{
+        font-size: 2.5rem;
+        left: 20%;
+        position: fixed;
+    }
+    .modal-content p{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 300px){
+    .portfolio-container .modal-content h4{
+        font-size: 2rem;
+        left: 28%;
+        position: fixed;
+    }
+    .modal-content p{
+        font-size: 1.6rem;
+    }
+}
